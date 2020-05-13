@@ -1,6 +1,7 @@
 package com.algaworks.algafood.api.exceptionhandler;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -18,6 +19,15 @@ public class Problema {
 	private String tipo;
 	private String titulo;
 	private String detalhe;
-	private String userMessage;
+	private String mensagemUsuario;
+	private List<Campo> campos;
 	
+	@Getter
+	@Builder
+	public static class Campo {
+		
+		private String nome;
+		private String mensagemUsuario;
+		
+	}
 }

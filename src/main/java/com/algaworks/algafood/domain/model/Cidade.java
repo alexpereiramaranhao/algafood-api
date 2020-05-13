@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import com.algaworks.algafood.core.validation.Grupos;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -19,9 +23,11 @@ public class Cidade {
 	@EqualsAndHashCode.Include
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@NotNull(groups = Grupos.CozinhaId.class)
 	private Long id;
 	
 	@Column(nullable = false)
+	@NotBlank
 	private String nome;
 	
 	@ManyToOne
