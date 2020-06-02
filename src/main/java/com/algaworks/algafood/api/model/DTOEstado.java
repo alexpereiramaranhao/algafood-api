@@ -1,4 +1,4 @@
-package com.algaworks.algafood.domain.model.dto;
+package com.algaworks.algafood.api.model;
 
 import com.algaworks.algafood.api.model.input.DTO;
 

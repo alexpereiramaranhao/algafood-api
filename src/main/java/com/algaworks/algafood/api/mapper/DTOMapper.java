@@ -1,4 +1,4 @@
-package com.algaworks.algafood.domain.model.dto.mapper;
+package com.algaworks.algafood.api.mapper;
 
 import java.util.List;
 

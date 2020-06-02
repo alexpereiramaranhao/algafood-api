@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.algaworks.algafood.api.mapper.DTORestauranteMapper;
+import com.algaworks.algafood.api.model.input.DTORestauranteInput;
 import com.algaworks.algafood.domain.exception.CozinhaNaoEncontradaException;
 import com.algaworks.algafood.domain.exception.NegocioException;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.model.dto.DTORestaurante;
-import com.algaworks.algafood.domain.model.dto.input.DTORestauranteInput;
-import com.algaworks.algafood.domain.model.dto.mapper.DTORestauranteMapper;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 import com.algaworks.algafood.domain.service.CadastroRestauranteService;
 

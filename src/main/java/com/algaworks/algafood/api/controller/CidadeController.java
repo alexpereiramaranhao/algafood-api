@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.algaworks.algafood.api.mapper.DTOCidadeMapper;
+import com.algaworks.algafood.api.model.input.DTOCidadeInput;
 import com.algaworks.algafood.domain.exception.EstadoNaoEncontradoException;
 import com.algaworks.algafood.domain.exception.NegocioException;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.model.dto.DTOCidade;
-import com.algaworks.algafood.domain.model.dto.input.DTOCidadeInput;
-import com.algaworks.algafood.domain.model.dto.mapper.DTOCidadeMapper;
 import com.algaworks.algafood.domain.repository.CidadeRepository;
 import com.algaworks.algafood.domain.service.CadastroCidadeService;
 

@@ -1,4 +1,4 @@
-package com.algaworks.algafood.domain.model.dto;
+package com.algaworks.algafood.api.model;
 
 import com.algaworks.algafood.api.model.input.DTO;
 
@@ -7,9 +7,9 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class DTOEstado extends DTO {
-	
+public class DTOCidade extends DTO  {
 	private Long id;
 	private String nome;
-	
+	private DTOEstado estado;
+
 }

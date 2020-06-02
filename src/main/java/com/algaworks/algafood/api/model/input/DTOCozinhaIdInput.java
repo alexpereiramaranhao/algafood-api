@@ -1,15 +1,13 @@
-package com.algaworks.algafood.domain.model.dto.input;
+package com.algaworks.algafood.api.model.input;
 
 import javax.validation.constraints.NotNull;
 
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
-public class DTOEstadoIdInput extends DTO  {
-	
+@Getter
+public class DTOCozinhaIdInput {
 	@NotNull
 	private Long id;
-
 }

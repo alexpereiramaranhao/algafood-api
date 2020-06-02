@@ -1,4 +1,4 @@
-package com.algaworks.algafood.domain.model.dto.mapper;
+package com.algaworks.algafood.api.mapper;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -7,10 +7,10 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.algaworks.algafood.api.model.input.DTORestauranteInput;
 import com.algaworks.algafood.domain.model.Cozinha;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.model.dto.DTORestaurante;
-import com.algaworks.algafood.domain.model.dto.input.DTORestauranteInput;
 
 @Component
 public class DTORestauranteMapper implements DTOMapper<DTORestaurante, Restaurante> {
