@@ -7,13 +7,14 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.algaworks.algafood.api.model.DTORestaurante;
 import com.algaworks.algafood.api.model.input.DTORestauranteInput;
 import com.algaworks.algafood.domain.model.Cozinha;
 import com.algaworks.algafood.domain.model.Restaurante;
-import com.algaworks.algafood.domain.model.dto.DTORestaurante;
 
 @Component
 public class DTORestauranteMapper implements DTOMapper<DTORestaurante, Restaurante> {
+	
 	@Autowired
 	private ModelMapper modelMapper;
 	

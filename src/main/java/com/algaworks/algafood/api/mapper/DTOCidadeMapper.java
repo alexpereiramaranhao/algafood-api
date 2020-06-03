@@ -7,10 +7,10 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.algaworks.algafood.api.model.DTOCidade;
 import com.algaworks.algafood.api.model.input.DTOCidadeInput;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.model.Estado;
-import com.algaworks.algafood.domain.model.dto.DTOCidade;
 
 @Component
 public class DTOCidadeMapper implements DTOMapper<DTOCidade, Cidade>{
