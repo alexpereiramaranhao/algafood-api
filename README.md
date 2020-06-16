@@ -1,4 +1,4 @@
-# algafood-api
+# Padrão Api Rest
 Rest Api para demostraçãod e conceitos avançados de Spring Rest API.
 
 1. Introdução
